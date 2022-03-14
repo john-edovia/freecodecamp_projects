@@ -1,0 +1,54 @@
+			<!DOCTYPE html>
+			<html>
+			<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Survey Form</title>
+				<link rel="stylesheet" type="text/css" href="survey.css">
+			</head>
+			<body>
+				
+				<h1 id="title">Survey Form</h1>
+		<p id="description">Thank you for taking the time to complete this survey</p>
+		<form id="survey-form">
+			<fieldset>
+				<label id="name-label"> Name: <input id="name" type="text" placeholder="Your name" required></label>
+				<label id="email-label"> Email: <input id="email" type="email" placeholder="Your email" required></label>
+	      <label id="number-label"> Age(<span>optional</span>): <input id="number" type="number" min="18" max="120" placeholder="Your age" ></label>
+				
+			</fieldset>
+			<fieldset>
+	      <label>How did you hear about us: 
+				<select id="dropdown">
+					<option>google.com</option>
+	        <option>Social Media</option>
+	        <option>Work Place</option>
+					<option>Friend</option>
+					<option>Other</option>
+				</select>
+	      </label>
+	      <label class="topic">Would you recommend us to a friend?</label>
+	      <label><input class="inline" type="radio" name="recommend" value="yes"> Yes</label>
+				<label><input class="inline" type="radio" name="recommend" value="no"> No</label>
+				<label><input class="inline" type="radio" name="recommend" value="maybe"> Maybe</label>
+				<label class="topic"> Which course have you completed?</label>
+					<label class="course"><input type="checkbox" value="1"> HTML</label>
+					<label class="course"><input type="checkbox" value="2"> CSS</label>
+					<label class="course"><input type="checkbox" value="3"> JAVAScript</label>
+					<label class="course"><input type="checkbox" value="4"> PHP</label>
+				
+
+			</fieldset>
+			<fieldset>
+				<label class="comment">Additional Comments:
+
+					<textarea id="textarea" cols="30" rows="10">
+						
+					</textarea>
+				</label>
+			</fieldset>
+			<button id="submit" type="submit" form="survey-form" value="Submit">Submit</button>
+		</form>
+
+			</body>
+			</html>
